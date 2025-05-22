@@ -1,0 +1,225 @@
+:root {
+    --maroon: #800000;
+    --maroon-light: #a06666;
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #f8f9fa;
+    --gray-dark: #343a40;
+    --border: #dee2e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--gray);
+    min-height: 100vh;
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: var(--maroon);
+    color: var(--white);
+    padding: 1.5rem;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link i {
+    margin-right: 0.8rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 2rem;
+    margin-left: 250px;
+    display: grid !important;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 1.5rem; /* Spacing between cards */
+}
+/* .dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+} */
+
+
+.new-form {
+    margin-right: 20px;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--maroon); /* Green background */
+    color: var(--white);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--maroon-light); /* Slightly darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+button:active {
+    background-color: green; /* Even darker green when clicked */
+    transform: scale(0.98); /* Button shrinks a little when clicked */
+}
+
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    color: var(--gray-dark);
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--maroon);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #600000;
+}
+
+/* Analytics Grid */
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Analytics Card */
+.analytics-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.analytics-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    background-color: var(--maroon);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    font-size: 1.1rem;
+    color: var(--gray-dark);
+    margin-bottom: 0.5rem;
+}
+
+.card-value {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--maroon);
+    margin-bottom: 0.25rem;
+}
+
+.card-subtext {
+    font-size: 0.9rem;
+    color: var(--gray-dark);
+    opacity: 0.8;
+}
+
+/* Charts Section */
+.charts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.chart-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card h3 {
+    font-size: 1.2rem;
+    color: var(--gray-dark);
+    margin-bottom: 1rem;
+}
